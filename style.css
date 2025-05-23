@@ -20,7 +20,7 @@
 
 html {
   font-size: 62.5%; /* 1rem = 10px */
-  line-height: 1.6;
+  line-height: 1.7;
   scroll-behavior: smooth;
 }
 
@@ -97,22 +97,83 @@ img {
 
 .socials {
   margin-right: 3.5rem;
-  button {
-    background-color: var(--light-grayish-blue);
-    border: none;
-    border-radius: 50px;
-    padding: 1rem 1.5rem;
-    cursor: pointer;
+  position: absolute;
+}
 
-    img {
-      width: 2rem;
-      height: 2rem;
-    }
+.btn-social {
+  background-color: var(--light-grayish-blue);
+  border: none;
+  border-radius: 50px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  img {
+    width: 2rem;
+    height: 2rem;
   }
 }
 
-button:hover {
+.social-btns__position {
+  position: relative;
+  bottom: 9rem;
+  left: 40rem;
+  width: 10rem;
+}
+
+.share {
+  color: var(--grayish-blue);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.social-btns {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 300%;
+  gap: 1rem;
   background-color: var(--very-dark-grayish-blue);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+}
+
+.social-btns::after {
+  width: 25px;
+  height: 25px;
+  content: "";
+  position: absolute;
+  background-color: var(--very-dark-grayish-blue);
+  top: 50%;
+  left: 55%;
+  margin-left: -20px;
+  transform: rotate(45deg);
+  margin-top: 25px;
+}
+
+.btn-social:hover {
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.social-btn {
+  background-color: transparent;
+  border: none;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+.social-btn :hover {
+  background-color: var(--light-grayish-blue);
 }
 
 .attribution {
