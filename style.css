@@ -135,6 +135,11 @@ body {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 300;
+  cursor: pointer;
+}
+
+.share:hover {
+  color: var(--desaturated-dark-blue);
 }
 
 .social-btns {
@@ -214,5 +219,64 @@ body {
       width: 100%;
       border-radius: 10px 0 0 10px;
     }
+  }
+}
+
+@media (max-width: 975px) {
+  .card {
+    padding-bottom: 4rem;
+  }
+}
+
+@media (max-width: 689px) {
+  .card {
+    padding-bottom: 9rem;
+  }
+}
+
+@media (max-width: 529px) {
+  .card {
+    padding-bottom: 15rem;
+  }
+}
+
+@media (max-width: 789px) {
+  .card {
+    width: 70%;
+    height: 90%;
+  }
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 90%;
+    height: 100%;
+  }
+
+  .img-drawer {
+    width: 100%;
+    height: 50%;
+    img {
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+    }
+  }
+
+  .describer-card {
+    margin: 2rem;
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      font-size: var(--font-size);
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .socials {
+    position: absolute;
+    bottom: -3rem;
+    left: calc(50% - 150px);
   }
 }
