@@ -202,73 +202,34 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-/* media queries  */
+/* media queries */
 
-/* mobile size */
-
-@media (max-width: 1109px) {
-  .card {
-    flex-direction: column;
-    height: 80%;
-    width: 80%;
-  }
-
-  .img-drawer {
-    width: 60%;
-
-    img {
-      /* height: 100%; */
-      border-radius: 10px 0 0 10px;
-      object-fit: cover;
-    }
-  }
-}
-
-@media (max-width: 975px) {
-  .card {
-    padding-bottom: 4rem;
-  }
-}
-
-@media (max-width: 689px) {
-  .card {
-    padding-bottom: 9rem;
-  }
-}
-
-@media (max-width: 529px) {
-  .card {
-    padding-bottom: 15rem;
-  }
-}
-
-@media (max-width: 789px) {
-  .card {
-    width: 70%;
-    height: 90%;
-  }
-}
-
-@media (max-width: 375px) {
+@media (max-width: 1124px) {
   .card {
     width: 90%;
-    height: 100%;
+    height: auto;
+    flex-direction: column;
   }
 
   .img-drawer {
     width: 100%;
-    height: 50%;
+
     img {
       width: 100%;
+      border-radius: 10px 10px 0 0;
+      height: auto;
     }
   }
 
   .describer-card {
     margin: 2rem;
+    text-align: center;
+
     h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 1.5rem;
     }
+
     p {
       font-size: var(--font-size);
       margin-bottom: 1.5rem;
@@ -276,36 +237,100 @@ body {
   }
 
   .socials {
-    position: absolute;
-    bottom: -3rem;
-    left: calc(50% - 150px);
+    width: 20%;
+    height: auto;
   }
-}
-/* buttons  */
-@media (max-width: 954px) {
+
   .social-btns__position {
     position: relative;
-    bottom: -4.6rem;
-    left: -4rem;
-    width: 89%;
+    bottom: 0rem;
+    left: 2rem;
+    width: 10%;
   }
-  .social-btns {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 300%;
-    gap: 1rem;
-    background-color: var(--very-dark-grayish-blue);
-    padding: 1rem 1.5rem;
-    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
   }
 
-  .social-btns::after {
-    display: none;
+  .img-drawer {
+    width: 100%;
+    img {
+      border-radius: 10px 10px 0 0;
+      height: auto;
+    }
   }
 
-  .btn-social {
-    z-index: 1;
+  .describer-card {
+    margin: 2rem;
+    text-align: center;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: var(--font-size);
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .socials {
+    position: static;
+    margin-top: 1rem;
+  }
+
+  .social-btns__position {
+    position: static;
+    width: auto;
+    left: auto;
+    bottom: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .img-drawer {
+    width: 100%;
+    img {
+      border-radius: 10px 10px 0 0;
+      height: auto;
+    }
+  }
+
+  .describer-card {
+    margin: 2rem;
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: var(--font-size);
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .socials {
+    position: static;
+    margin-top: 1rem;
+  }
+
+  .social-btns__position {
+    position: static;
+    width: auto;
+    left: auto;
+    bottom: auto;
   }
 }
